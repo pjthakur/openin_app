@@ -216,8 +216,8 @@ font-size: 12px;
         
     }
     .product_body_sub{
-        visibility: hidden;
-        font-size: 0px;
+        
+        font-size: 10px;
         padding-left: -20px;
     }
     .layout{
