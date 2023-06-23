@@ -7,7 +7,7 @@ const Card = (props) => {
   return (
     <div className={styles.container} style={{backgroundColor:`${color}`}}>
         <div className={styles.image}>
-        <Image src={`${props.image}`} height={5} width={5} className={styles.images} alt='hello' />
+        <Image src={`${props.image}`} height={25} width={25} className={styles.images} alt='hello' />
         </div>
         <h5 className={styles.signal}>{props.signal}</h5>
         <p className={styles.price}>{props.price}</p>

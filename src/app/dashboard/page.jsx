@@ -7,7 +7,7 @@ import Search from '@/components/search/Search'
 import {signIn, signOut, useSession,  getProviders} from 'next-auth/react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import Card from '@/components/card/card'
+import Card from '@/components/card/Card'
 import Chartscom from '@/components/chart/Chartscom'
 import PieChart from '@/components/chart/PieChart'
 
@@ -33,7 +33,9 @@ export default function Dashboard() {
 const crypValues = Object.values(crypData)
 console.log(crypValues)
 const crypValues1=[
-
+  {
+    // buy: crypValues[0].buy || 555, 
+  }
 ]
   const cardImages = [
     {img1:'/vector1.svg'},
@@ -71,7 +73,7 @@ const crypValues1=[
         </div>
         
         <div className={styles.cards}>
-          <Card price={crypValues[0].buy}  image ='/vector1.svg' signal={crypValues[0].symbol}  color="#DDEFE0"/>
+          <Card price={crypValues[0].buy}  image ='/Vector1.svg' signal={crypValues[0].symbol}  color="#DDEFE0"/>
           <Card price={crypValues[1].buy}  image ='/vector3.svg' signal={crypValues[1].symbol}  color="#F4ECDD"/>
           <Card price={crypValues[2].buy}  image ='/vector.svg'  signal={crypValues[2].symbol} color="#EFDADA"/>
           <Card price={crypValues[3].buy}  image ='/vector2.svg' signal={crypValues[3].symbol}  color="#DEE0EF"/>

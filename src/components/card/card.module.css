@@ -9,7 +9,7 @@
 .image{
     position: relative;
    display: flex;
-   width: 165%;
+   width: 90%;
    overflow: hidden;
    justify-content: end;
    margin-top: 20px;
