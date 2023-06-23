@@ -73,10 +73,10 @@ const crypValues1=[
         </div>
         
         <div className={styles.cards}>
-          <Card price={crypValues[0].buy}  image ='/Vector1.svg' signal={crypValues[0].symbol}  color="#DDEFE0"/>
-          <Card price={crypValues[1].buy}  image ='/vector3.svg' signal={crypValues[1].symbol}  color="#F4ECDD"/>
-          <Card price={crypValues[2].buy}  image ='/vector.svg'  signal={crypValues[2].symbol} color="#EFDADA"/>
-          <Card price={crypValues[3].buy}  image ='/vector2.svg' signal={crypValues[3].symbol}  color="#DEE0EF"/>
+          <Card price="5545.24"  image ='/Vector1.svg' signal={crypValues[0].symbol}  color="#DDEFE0"/>
+          <Card price="5563.54"  image ='/vector3.svg' signal={crypValues[1].symbol}  color="#F4ECDD"/>
+          <Card price="2456.56"  image ='/vector.svg'  signal={crypValues[2].symbol} color="#EFDADA"/>
+          <Card price="1236.55"  image ='/vector2.svg' signal={crypValues[3].symbol}  color="#DEE0EF"/>
         </div>
         
           <Chartscom/>
