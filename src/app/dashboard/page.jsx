@@ -75,8 +75,8 @@ const crypValues1=[
         <div className={styles.cards}>
           <Card price="5563.54"  image ='/vector3.svg' signal="USD"  color="#F4ECDD"/>
           <Card price="5545.24"  image ='/Vector1.svg' signal="ASD"  color="#DDEFE0"/>
-          <Card price="2456.56"  image ='/vector.svg'  signal="DOG" color="#EFDADA"/>
-          <Card price="1236.55"  image ='/vector2.svg' signal="GAM"  color="#DEE0EF"/>
+          <Card price="2456.56"  image ='/Vector.svg'  signal="DOG" color="#EFDADA"/>
+          <Card price="1236.55"  image ='/Vector2.svg' signal="GAM"  color="#DEE0EF"/>
         </div>
         
           <Chartscom/>
