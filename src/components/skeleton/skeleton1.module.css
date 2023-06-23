@@ -1,0 +1,17 @@
+.card{
+    background-color: #fff;
+    height: 100vh;
+    
+}
+.card_sub{
+    gap: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+
+}
+.rectangle{
+    gap:40px;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  
+
+.layout{
+    display: flex;
+    padding: 40px;
+    background-color: var(--background, #F5F5F5);
+}
+.container{
+    color: black;
+    padding: 20px 0px 20px 60px;
+    width: 100%;
+    max-width: 1000px;
+}
+.hero{
+    color: #000;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 700;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    max-width: 1000px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.nav_right{
+    display: flex;
+    flex: 1;
+
+    gap: 30px;
+    justify-content: end;
+    align-items: center;
+
+}
+.user{
+    display: block;
+    height: 35px;
+    width: 35px;
+    overflow: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.user_image{
+    position: relative;
+    width: inherit;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    gap:10px;
+    max-width: 100%;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    max-width: 430px;
+    width: 100%;
+    max-height: 256px;
+    background-color: #FFF;
+    border-radius: 20px;
+    padding: 10px 25px;
+    
+    
+}
+.product_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    margin-left: 40px;
+}
+.product_subHeading{
+    color: var(--secondary-text, #858585);
+font-size: 12px;
+}
+.product_body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30.69px ;
+}
+.schedule_para{
+    color: var(--secondary-text, #858585);
+font-size: 12px;
+}
+.schedule_list::marker{
+    content:"•";
+    font-size: 1.7rem;
+    vertical-align: bottom;
+    margin: 5px;
+    color: #98D89E;
+ }
+ .schedule_list, .schedule_list2, .schedule_list3{
+    font-family:"Montserrat", "sans-serif";
+    font-weight: 700;
+ }
+ 
+ .schedule_list2::marker{
+    color: #F6DC7D;
+    content:"•";
+    font-size: 1.7rem;
+    vertical-align: bottom;
+    margin: 10px;
+ }
+ .schedule_list3::marker{
+    color: #EE8484;
+    content:"•";
+    font-size: 1.7rem;
+    vertical-align: bottom;
+ }
+ .foot{
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    justify-content: space-between;
+ }
+ .schedules{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-top: 25px;
+    gap: 13px;
+ }
+ .schedule{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+ }
+ .schedule_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+ }
+ .schedule_bar{
+    height: 66px;
+    width: 5px;
+    display: block;
+    background-color: #98D89E;
+ }
+ .schedule_head{
+    color: #666;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 700;
+ }
+ .schedule_time{
+    color: var(--icon, #999);
+    font-size: 12px;
+ }
+ .logout{
+    display: block;
+    background-color: #666;
+    height: 50px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top:120px;
+    background-color: #858585;
+    border-radius: 10px;
+ }
+ .logout_button{
+    background-color: transparent;
+    color: #F4ECDD;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+ }
+ @media (max-width:960px) {
+    .cards{
+        grid-template-rows: auto auto;   
+        grid-template-columns: 50% 50%;
+        margin-bottom: 20px;
+    }
+    .foot{
+        flex-direction: column;
+        gap:20px;
+    }
+    .product_head{
+        flex-direction: column;
+    }
+    
+ }
+ @media (max-width:560px) {
+    .nav{
+        flex-direction: row-reverse;
+        justify-content: start;
+    }
+    .nav_right{
+        justify-content: space-between;
+    }
+    
+    .hero{
+       font-size: 0;
+       visibility: collapse;
+    }
+    
+    .product{
+      padding-left: 0;
+    }
+    .product_body{
+        place-items: center;
+        flex-direction: row-reverse;
+        
+    }
+    .product_body_sub{
+        visibility: hidden;
+        font-size: 0px;
+        padding-left: -20px;
+    }
+    .layout{
+        padding: 0;
+    }
+    .container{
+        margin-left: 60px;
+    }
+ }
+ 

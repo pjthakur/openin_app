@@ -1,0 +1,36 @@
+.container{
+    max-width: 221px;
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+}
+.image{
+    position: relative;
+   display: flex;
+   width: 165%;
+   overflow: hidden;
+   justify-content: end;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.signal{
+    font-size: 14px;
+    color:#000;
+    padding-left: 25px;
+}
+.price{
+    padding-left: 25px;
+    font-size: 1.2em;
+    font-weight: 700;
+    padding-bottom: 20px;
+    display: block;
+    width: 100%;
+}
+@media (max-width:960px) {
+    .container{
+        max-width: 100%;
+        margin-bottom: 10px;
+    }
+}

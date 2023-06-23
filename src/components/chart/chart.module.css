@@ -1,0 +1,27 @@
+.card{
+    border-radius: 20px;
+    background-color: #fff;
+    max-height: 350px;
+    padding: 27px 43px;
+    max-width: 1000px;
+    margin-bottom: 40px;
+}
+.chart_heading{
+    font-size: 18px;
+}
+.chart_sub{
+color: var(--secondary-text, #858585);
+font-size: 14px;
+}
+.pieCard{
+    width: 145.941px;
+height: 145.941px;
+}
+
+@media (max-width:700px) {
+    /* .card{
+        max-width: 500px;
+        width: 100%;
+
+    } */
+}
